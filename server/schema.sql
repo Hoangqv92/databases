@@ -18,6 +18,9 @@ CREATE TABLE messages (
   --   REFERENCES rooms(id)
   --   ON UPDATE CASCADE
   --   ON DELETE CASCADE
+
+
+  -- CREATE FOREIGN KEYS THAT ACTUALLY WORK----------------------------------------------
 );
 
 CREATE TABLE users (
