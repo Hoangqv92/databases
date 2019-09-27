@@ -5,6 +5,7 @@ var router = require('express').Router();
 router.get('/messages', controller.messages.get);
 
 router.post('/messages', controller.messages.post);
+// router.post('/messages', () => { console.log('hi'); controller.messages.post(...arguments); });
 
 router.get('/users', controller.users.get);
 

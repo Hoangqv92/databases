@@ -7,8 +7,8 @@ DROP TABLE IF EXISTS messages, users, rooms;
 CREATE TABLE messages (
   id            INT AUTO_INCREMENT,
   text          VARCHAR(150),
-  users_id       INT,
-  rooms_id       INT,
+  users_id      INT,
+  room          VARCHAR(150),
   PRIMARY KEY   (id)
   -- FOREIGN KEY (users_id)
   --   REFERENCES users(id)
@@ -29,11 +29,11 @@ CREATE TABLE users (
   PRIMARY KEY   (id)
 );
 
-CREATE TABLE rooms (
-  id            INT AUTO_INCREMENT,
-  name          VARCHAR(150),
-  PRIMARY KEY   (id)
-);
+-- CREATE TABLE rooms (
+--   id            INT AUTO_INCREMENT,
+--   name          VARCHAR(150),
+--   PRIMARY KEY   (id)
+-- );
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < server/schema.sql
